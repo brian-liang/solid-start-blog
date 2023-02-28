@@ -1,9 +1,8 @@
-import { Outlet } from "solid-start";
-
+import { Outlet, Stylesheet } from "solid-start";
+import styles from './blogPost.module.scss'
 export default function BlogPost() {
     return (
-        <div>
-            <h1>Hey I'm the layout guy/gal</h1>
+        <div class={styles.blogPost}>
             <Outlet />
         </div>
     )
