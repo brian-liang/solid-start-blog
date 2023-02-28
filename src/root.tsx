@@ -12,6 +12,7 @@ import {
   Scripts,
   Title,
 } from "solid-start";
+import Nav from "./components/Nav";
 import "./root.css";
 
 export default function Root() {
@@ -24,8 +25,7 @@ export default function Root() {
       </Head>
       <Body>
         <ErrorBoundary>
-          <A href="/">Index</A>
-          <A href="/about">About</A>
+          <Nav/>
           <Suspense>
             <main>
               <Routes>
